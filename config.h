@@ -13,19 +13,19 @@ static const char *fonts[] = {
 
 static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
-static char normfgcolor[] = "#bbbbbb";
-static char normbgcolor[] = "#222222";
-static char selfgcolor[]  = "#eeeeee";
-static char selbgcolor[]  = "#005577";
+static char foreground[]  = "#f5c0bf";
+static char background[]  = "#020238";
+static char selbgcolor[]  = "#B34869";
+static char outbgcolor[]  = "#DC6C91";
 static char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { normfgcolor, normbgcolor },
-	[SchemeSel]  = { selfgcolor,  selbgcolor  },
-	[SchemeOut]  = { "#000000",   "#00ffff" },
+	[SchemeNorm] = { foreground,  background },
+	[SchemeSel]  = { foreground,  selbgcolor },
+	[SchemeOut]  = { foreground,  outbgcolor },
 
-	[SchemeSelHighlight] = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
-	[SchemeOutHighlight] = { "#ffc978", "#00ffff" },
+	[SchemeNormHighlight] = { "#ffc978",  background },
+	[SchemeSelHighlight] =  { "#ffc978",  selbgcolor },
+	[SchemeOutHighlight] =  { "#ffc978",  outbgcolor },
  };
  /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
  static unsigned int lines      = 0;
@@ -41,9 +41,9 @@ static char *colors[SchemeLast][2] = {
  */
 ResourcePref resources[] = {
 	{ "font",        STRING, &font },
-	{ "normfgcolor", STRING, &normfgcolor },
-	{ "normbgcolor", STRING, &normbgcolor },
-	{ "selfgcolor",  STRING, &selfgcolor },
-	{ "selbgcolor",  STRING, &selbgcolor },
+	{ "foreground",  STRING, &foreground },
+	{ "background",  STRING, &background },
+	{ "color1",      STRING, &selbgcolor },
+	{ "color6",      STRING, &outbgcolor },
 	{ "prompt",      STRING, &prompt },
 };
