@@ -8,7 +8,6 @@ This repository contains a customized version of `dmenu`, a dynamic menu for X, 
 
 ## Features
 
-- **Emoji Highlight**: Adds support for highlighting emojis in the menu.
 - **Highlight**: Enhances the visual feedback for selected items.
 - **Mouse Support**: Adds mouse interaction support.
 - **Password**: Enables a password mode where input is hidden.
