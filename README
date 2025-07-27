@@ -22,3 +22,23 @@ Afterwards enter the following command to build and install dmenu
 Running dmenu
 -------------
 See the man page for details.
+
+Version
+-------
+5.3
+
+Patches
+-------
+dmenu-highlight-20201211-fcdc159.diff
+dmenu-lineheight-5.2.diff
+dmenu-mousesupport-5.3.diff
+dmenu-numbers-20220512-28fb3e2.diff
+dmenu-password-5.0.diff
+dmenu-rejectnomatch-4.7.diff
+dmenu-symbols-4.9.diff
+dmenu-xresources-alt-5.0.diff
+
+Credits
+-------
+This project is based on dmenu, developed by the suckless 
+community.
